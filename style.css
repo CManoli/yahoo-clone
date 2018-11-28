@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    padding: 1rem 6rem;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    float: right;
+}
+
+.wrapper {
+    box-shadow: 0 0 5px 0 rgba(72, 94, 116, 0.4);
+    margin-top: 3rem;
+}
+
+.wrapper > * {
+    padding: 3em;
+}
+
+.company-name h2 {
+    color: blue;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+.contact form, .contact h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form input, .contact form button {
+    width: 100%;
+}
+
+.contact form input {
+    padding: 1em;
+    border: none;
+    border-bottom: 2px solid #c9e6ff;
+}
+
+.contact form input:focus {
+    outline: none;
+    border-bottom: 2px solid #3a6acf;
+}
+
+.contact form button {
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+    border: 0;
+    background: #3264cf;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.contact form button:hover, .contact form button:focus {
+    background: #3778b9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.wrapper .request {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.check {
+    color: #485e74;
+    cursor: pointer;
+    border-bottom: 1px dotted #3778b9;
+}
+
+.check:hover {
+    color: #051a49;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #3778b9;
+}
+
+.wrapper a:hover {
+    color: #051a49;
+}
+
+.wrapper .new-account {
+    text-align: center;
+}
+
+@media(min-width: 700px) {
+    .wrapper > * {
+        padding: 3em;
+    }
+
+    .wrapper .request {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
